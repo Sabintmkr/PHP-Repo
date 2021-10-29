@@ -1,0 +1,177 @@
+Name: Sabin Tamrakar
+Student Number: 0061119585
+The Project Topic: Game Store
+
+1. Functionality planned for all users(public)
+- Users are able to view the products and games respectively.
+- Users will have all the information on the products along with its prices.
+- Users can read blogs on the current gaming world, new products that are going to be released.
+- Users can subscribe the store site where they will be notified about products that are on sale, reduction
+  in price, give aways, new product release date and pre bookings.
+- Have access to all the products, blogs and news as well.
+- Unregistered users can buy products in which they are to fill the form and card details for purchase.
+- They will receive online bill that needs to be presented during return of the products which is only eligible for 
+15days time period.
+- Unregistered users will get no discount on products except that are for sale.
+- Quotas and recommendation are provided to unregistered users for products and budget. 
+- Delievery will not be free.
+
+2. Functionality planned for registered users only:
+- Users are able to register and create their role respectively as customers.
+- Users will be allowed a 15% discount on their first buy after registration on any products.
+- Users will have will have discount of 5% for 6 months in games.
+- Users will have special discount on games during pre order.
+- Only registered users will be able to buy products online which are replaced or returned within 30days.
+- Quotas and recommendation are provided to users for products and budget. 
+- Delivery is free
+- click and collect in 30minutes option for only registered users.
+
+3. Functionality planned for simple search:
+a. Search for products:
+- Search is maintained according to price and name of the product.
+- Search for games are going to be according to name and platform.
+- New products and pre ordering available products will be searched with names and terms such as sales or pre ordering.
+
+b. For backend CMS search for customers details and records:
+- Customers name and phone number is used to search the customers.
+- price for registered customers can be search separately with product name
+
+
+4. Functionality planned for complex search:
+a. Search for products:
+- Search can be done according to product name, sale, price, recent trending products with higher number of sales.
+- Search for product can be done according to platform as well as version 
+- Search for console products are going to be according to platform with version, storage capacity and other factors.
+- Search for used products can also be done respectively in complex search.
+
+b. For backend search:
+- Search is mostly based on customers details and purchase history of each customers. It is generally done for
+keeping the log of products bought by the customers while can be used during discount, sales or returning of
+the products respectively.
+- Search can be conducted with the user id, name, phone number or date of products bought respectively
+- Search for products are based on the name of the products, product code, rate, date of entry which can be
+accessed for inventory management to know what products are left and which are cleared out.
+
+
+Image links (Reference)
+
+1. https://piunikaweb.com/2020/02/13/new-need-for-speed-game-coming-from-criterion-games-is-nfs-2020-under-development/
+
+2. https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-20/images/2019/07/fifa20-navtile-16x9-standardedition.png
+
+3. https://techzimo.com/wp-content/uploads/2020/05/The-last-of-us-2-TLM-1280x720.jpg
+
+4. https://www.gamestop.ie/Views/Locale/Content/Images/PlatformCategories/PS4_LandingPage_IE_P07.jpg
+
+5. https://uploads.ar12gaming.com/articles/UBpURaIH-FB_TW-Available-Today_September_Wire-post-hero.large.png
+
+6. https://www.siliconera.com/wp-content/uploads/2011/10/WII_blue_europe_thumb-1200x675.jpg
+
+7. https://1.bp.blogspot.com/-yWnD5C9GLDE/XOVzfrUrvnI/AAAAAAAAHwc/IoZQIU0GkjslcTVWBOst7_nRpPI6K5tmgCLcBGAs/s1600/ps5.jpg
+
+8. https://i0.wp.com/xboxera.com/wp-content/uploads/2019/12/xboxsex.jpg?fit=4096%2C2304&ssl=1
+
+9. https://www.vortez.net/news_file/18208_corsair-vengeance-6100-series-pc.jpg
+
+10. https://falabella.scene7.com/is/image/Falabella/12624309_1?wid=800&hei=800&qlt=70
+
+11. https://www.iconarchive.com/tag/games-ico
+
+
+ASSIGNMENT 2 updates that were done for assignment are as follows:
+1.install.php file is created at the beginning which is to be implemented first by running the file in the server which automatically creates a database called GameLand.db
+
+2.Along with creation of database the data are populated in the database for the testing pupose. For login the username: Admin and password: www which can be vistied going on the sign-in button in index.php and 
+selecting login that will redirect to login.php.
+
+3.libcommon.php is created where most of the common functions that are required for the CRUD operations are written respectively. It is like the base controller in this application.
+
+4.The major change is the application is now dynamic with the implementation of database used and most of the features are populated using database.
+
+5.About-Us and a playstation page is created to show how the page works in nav-bar in the index page where the playstation.php from dropdown shows how the products in the application are displayed accordingly so that the customers
+are able to see the products clearly and can decide what they want. 
+
+6.Dashboard the backend portal of the Gameland store is also created which acts as a CMS site where only the authorized users are able to access and use it.
+7.The dashboard area is the area when loggin successfully shows the users profile who is loggedin along with the day and time of the system. The authorization restriction is managed with the dynamic use of session where the users
+id and name are used that are retrived from the database via GET methods respectively.
+
+8.Another part is the creation of category which generally is the platform of the products that are to be sold such as Playstation or Xbox which later joins the products table respectively.The CRUD operation can be doen
+easily with a dynamic and easy to use layout. The authorized users are able to create edit or remove the records from the category table respectively. Inorder to show the use of javascript and ajax, the remove code of the category is done 
+using ajax where the data is posted asynchronously with alerts used to track the progress and see which id is being deleted respectively.
+
+9. Similarly, employee or authorized users table is also used where users are able to use CRUD operation to add or edit or delete the users. But the thing is the user who is logged at the current session is not able to delete him/herself.
+This feature is added too. Later in the future enhancement we can add the removal of the users only by the admin when the application is made role based with superadmin, admin and employee that makes the application much more
+secure. Besides, other crud operations are same which are dynamic and with easy to navigate layout.
+ 
+10. Product can also be added via dashboard area which can be seen in the index main page dynamically. Product CRUD operation is also created similar to other two operations where we can add products according to the category and 
+show those in the main page respectively. The front page index.php reflects data that are populated from database which were added from product. link: localhost/playstation.php. As we can see that there are various data with categories such as playstation
+or Xbox or nintendo. These are also filtered and in playstation.php only the product with category - PlayStation are shown and the one with Xbox are not shown.
+
+Note:
+- In Index.php goto nav bar select the shop dropdown button and goto playstation menu. It will redirect to playstation.php page where the data are populated from product table from database. This only shows the product with playstation category.
+- for login the USERNAME: ADMIN and PASSWORD: WWW
+-Goto navbar and click Sign-in dropdown button and select login option. It will redirect to login.php page. Use the credentials and login which will reflect to dash.php page which is the admin or employee portal for a CMS site.
+-Also check entering the wrong password or username.It will redirect to erro.php. Session is used to authorize the access for only authorized personals. Also without login check the links such as dash.php, employee.php, category.php
+ or product.php which will redirect to error page if not logged in
+-Inside the dashboard area, all the options are useable where all the menus have their own CRUD(create, read, update and delete) operations. 
+-There are few exception in the product part which will be fixed in final assignment such as which updating product if changing name requires to select image again or else it will not be saved in db. Edit part is abit required to fix.
+-Data validation is the next target that is set for assignment 3 as well.
+
+Image Links:
+-Fifa20: https://www.twitch.tv/directory/game/FIFA%2020
+-Last of US: https://www.bigw.com.au/product/the-last-of-us-part-ii/p/68748/
+-Red dead redemption:https://en.wikipedia.org/wiki/Red_Dead_Redemption_2
+-nba20:https://en.wikipedia.org/wiki/NBA_2K20
+-nfsheat:https://www.ea.com/games/need-for-speed/need-for-speed-heat
+-jedi: https://www.target.com/p/star-wars-jedi-fallen-order-xbox-one-digital/-/A-78423374
+
+
+
+Assignment 3 updates that were done for assignment are as follows:
+1. all the databases are ready and can be installed using the install.php file when it is runned in the browser as localhost/install.php. It will generate and setup the database with some of the hardcoded data respectively.
+	- there are 9 table namingly:
+		-banner
+		-category
+		-client
+		-contactus
+		-employee
+		-orderdetails
+		-orders
+		-product
+		-upcomingitems
+2. New tables added are: banner, client, orders and order details  which have a many to many relation with client and upcomingitem. Apart from tables, there are few file which are created with the purpose of providing jquery codes for performing certain
+task respectively.
+3.Banner table is created where there is a provision of uploading images for the main banner in the index page respectively. CRUD has been implemented with images being setup dynamically from the employee portal.
+4.Customer login is also added so that different functions can be performed as given. For customer login and details, client table is used from where the data are retrieved or stored respectively.
+5.There are few hardcoded data for customer but for the customer login, go to the nav bar in the index or any page and on the top right corner there is a  dropdown button and can choose the customer login. It will redirect to the customer login page where
+we will login respectively. The login credentials are username: hari password:www 
+6. Contact us page is also setup where the contactus page is used where the customers can mail their query while from the employee portal the employee can view and reply via email respectively.
+7.For new upcoming items CRUD is implemented which uses upcomingitem table and stores and retrieves the data. Besides, the customers can view and read about the upcoming items and its details while the employee can dynamically change or update the following 
+details respectively.
+8.Order and Order details are master detail table where order stores the details of the customer and order details store the product details respectively. The relation here is many to many where one product can be bought by multiple customers 
+while one customers can buy another product.
+9. Product table is created in order to CRUD the products so that, the items can be added or deleted using the employee portal which are dynamically displayed in the other pages such as index, sales, accessories, game, catproduct etc.
+10. Search is implemented  in the client side where there are two different search process used such as simple search where the name is used for searching while the other search is called the advance search which have different categories from the
+product details such as name, sales option, category, date, price to search for the products respectively.
+11.Functions implemented are respectively in the application and they are as follows:
+	-gocart(): This function is used to add or remove the product that the customers add to the cart. Basically, when the customers add the products to the cart the function is used via jquery for and the products are displayed in the cart.php
+	-wish(): This function is similar to the gocart as it is used to add or remove the product that the customers who are logged in add the products to wishlist. The wishlist function can only be implemented or used by the user that are register users.
+	The customers can register using the register form which is implemented when clicked on sign-in dropdown and choosing the register. After register customers are able to add product to the wishlist for future.
+	
+12.Validation is also done for the forms where most of the inputs are required. Besides, in some cases date are used as current date with date() function.
+13.Catproduct.php is a page which is used as dynamic page where all the categories are displayed using the same page to display the contents respectively.
+14. In most of the areas in the application where there are messages to or from the customers side and displayed for the employee or in other cases such as in the upcoming items display view, when the messages or long and consist of more than 100 word, 
+READ MORE, function is used to show limit amount of words and later user can see the full text respectively.
+
+
+Image Links:
+-Fifa20: https://www.twitch.tv/directory/game/FIFA%2020
+-Last of US: https://www.bigw.com.au/product/the-last-of-us-part-ii/p/68748/
+-Red dead redemption:https://en.wikipedia.org/wiki/Red_Dead_Redemption_2
+-nba20:https://en.wikipedia.org/wiki/NBA_2K20
+-nfsheat:https://www.ea.com/games/need-for-speed/need-for-speed-heat
+-jedi: https://www.target.com/p/star-wars-jedi-fallen-order-xbox-one-digital/-/A-78423374
+-minecraft: https://en.wikipedia.org/wiki/Minecraft
+dota2: https://www.twitch.tv/directory/game/Dota%202
+nin:https://www.cnet.com/pictures/37-of-the-best-games-on-nintendo-switch/
+lol: https://www.game.tv/find-tournaments/league-of-legends-lol-tournaments

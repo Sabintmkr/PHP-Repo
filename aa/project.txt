@@ -1,0 +1,52 @@
+Student Name: Shailesh Maharjan
+Student Number: u1097312
+Project Topic: Movie Store
+
+Functionality for public users:
+1. The public users can view all the movies listed in the site (stored in the database).
+2. They can choose their desired movies and add to the shopping basket
+3. They can even add the comments to any movie in the site.
+
+Functionality for the registered users:
+1. Registered users can add, edit and even delete the movies in the site.
+2. For all the above actions, web pages will be provided with proper validations.
+
+Functionality planned for simple search:
+1. A single textbox will be provided where user can key in the name of the movie that he wants to search.
+2. OnClick of the Search button, the system will search for the matched movie name (in a single table) with the user entered data.
+3. The matched movies wil be listed in the site.
+
+Functionality planned for complex search:
+1. A link for complex search will be provided, which if clicked, user will be forwarded to a new complex search page.
+2. Here user can key in multiple parametes like movie name, director name, actor name, genres, release date.
+3. OnClick of the Search Button, the system will go for a complex search in the database, performing a Select JOIN statement.
+4. The matched movies will be listed in the site.
+
+
+Updates till the Due Date of Assignment 2:
+
+1. Created a new install.php file which should be run at the very first. This file includes the SQLite DB setup for the website, creation of different tables and populate data.
+2. libcommon.php file has been created. This file contains all the functions required to communicate with DB. It also contains other functions that are required in various stages of the website.
+3. The login module for the admin users is been created (login.php, logout.php). The user login status is captured and stored in the session variable.
+4. Website design has been made consistent. Two files header.php and footer.php has been created. All other files just include these files.
+5. index.php page has been made dynamic. The file reads the database and populate the page accordingly.
+6. movie.php has been created to view the detail view of a specific movie.
+7. User comments module has been created. The comments of individual user for a specific movie is captured from the database and displayed in the movie detail page.
+8. Simple search function has been activated. User can type in movie name. The website is able to search the specific movie in the database and display the available matched movies. 
+
+Updates till the Due Date of Assignment 3:
+1. Install.php has been included. This file includes the database framework of the system with all the data required. This file need to be executed at first to run the website properly.
+2. The login details of the admin user are stored in the admin_user table in the database. (username=admin||password=admin)
+   a. These admin users can ADD/EDIT/DELETE actors and the movies
+3. Both simple search and and advance search modules have been implemented in the system. The simple search just uses movie name for search, while the advance search encorporate the JOIN funcationality between movie table and actor_enrolled table (Many-to-Many relationship).
+4. Proper form has been provided for movie (add/update/delete) module and actor (add/update/delete) module with proper client side and server side validation.
+5. Asynchronous update (ajax) has been implemented in multiple places as mentioned below
+   a. Add new user comment for a movie
+   b. DELETE movie and DELETE actor
+   c. Add and remove actors to a specific movie
+   d. Advance search moduele
+5. User comments module for movies has been implemented only for the non-admin users using ajax.
+6. The page-not-found-error (404) page has been addressed by htaccess file.
+
+
+NOTE: All the data used in this website are derived from the website https://www.imdb.com/ Also all the images of movies and actors are derived from https://www.imdb.com/
